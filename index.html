@@ -3,12 +3,18 @@
   <head>
     <meta content="charset=UTF-8" />
     <title>Resume</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainBody").hide().delay(500).slideDown(1000);
+      });
+    </script>
 
     <style type="text/css">
       body {
-	margin: 0 auto;
+        margin: 0 auto;
         width: 95%;
-	max-width: 1000px;
+        max-width: 1000px;
         /* font-family: Arial, Helvetica, sans-serif; */
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -75,7 +81,6 @@
         list-style: none;
         margin: 0 0.25em 0 0.25em;
       }
-
     </style>
   </head>
 
@@ -90,119 +95,130 @@
     </ul>
     <div id="lineLeft"></div>
     <div class="spacer"></div>
-    <h2>OBJECTIVE</h2>
-    <div class="mainEntry">
-      <p id="objectiveStatement">
-        I am an engineer interested in cognition, both human and machine. I want
-        to know how it works, why it works, and how I can use my uniquely
-        interdisciplinary skills and knowledge to recreate it. I am seeking an
-        engineering internship to help develop the technology needed for a
-        better, safer, and more private future.
-      </p>
-    </div>
+    <div id="mainBody">
+      <h2>OBJECTIVE</h2>
+      <div class="mainEntry">
+        <p id="objectiveStatement">
+          I am an engineer interested in cognition, both human and machine. I
+          want to know how it works, why it works, and how I can use my uniquely
+          interdisciplinary skills and knowledge to recreate it. I am seeking an
+          engineering internship to help develop the technology needed for a
+          better, safer, and more private future.
+        </p>
+      </div>
 
-    <h2>EDUCATION</h2>
-    <div class="mainEntry">
-      <h3>M.S. in Cognitive Science | Rensselaer Polytechnic Institute</h3>
-      <ul>
-        <li>Estimated graduation December 2024 - GPA: 3.31</li>
-        <li>Computer Science and Information Technology</li>
+      <h2>EDUCATION</h2>
+      <div class="mainEntry">
+        <h3>
+          M.S. in Information Technology | Rensselaer Polytechnic Institute
+        </h3>
         <ul>
-          <li>
-            Used data structures, computational complexity, set theory,
-            probability theory, dynamic programming, cryptography, and
-            AI/machine learning to build programs that solved puzzles, generated
-            text, efficiently compared images, and more
-          </li>
+          <li>Estimated graduation December 2024</li>
         </ul>
-        <li>Psychology and Cognitive Science</li>
+      </div>
+      <div class="mainEntry">
+        <h3>B.S. in Cognitive Science | Rensselaer Polytechnic Institute</h3>
         <ul>
-          <li>
-            Understanding in a wide range of topics like philosophy, ethics,
-            psychology, neurology, and formal logic.
-          </li>
+          <li>Estimated graduation December 2023 - GPA: 3.31</li>
+          <li>Computer Science</li>
+          <ul>
+            <li>
+              Used data structures, computational complexity, set theory,
+              probability theory, dynamic programming, cryptography, and
+              AI/machine learning to build programs that solved puzzles,
+              generated text, efficiently compared images, and more
+            </li>
+          </ul>
+          <li>Psychology and Cognitive Science</li>
+          <ul>
+            <li>
+              Understanding in a wide range of topics like philosophy, ethics,
+              psychology, neurology, and formal logic.
+            </li>
+          </ul>
+          <li>Extended Cognition - Hypernote</li>
+          <ul>
+            <li>
+              Led a team of 3 students and designed a program to utilize
+              computer capabilities to keep track of notes and ideas in a way
+              more natural to human thinking while still being simple and
+              intuitive.
+            </li>
+          </ul>
         </ul>
-        <li>Extended Cognition - Hypernote</li>
-        <ul>
-          <li>
-            Led a team of 3 students and designed a program to utilize computer
-            capabilities to keep track of notes and ideas in a way more natural
-            to human thinking while still being simple and intuitive.
-          </li>
-        </ul>
-      </ul>
-    </div>
+      </div>
 
-    <div class="spacer"></div>
-    <h2>EXPERIENCE</h2>
-    <div class="mainEntry">
-      <h3>Software Developer | SecureCo | July 2023 - Present</h3>
-      <ul>
-        <li>
-          Currently programming and troubleshooting a secure data transfer
-          solution. I am responsible for implementing code obfuscation and
-          reverse engineering protection for the cross platform VPN app.
-        </li>
-      </ul>
-      <h3>Lab Assistant | CogWorks Lab RPI | January 2023 - Present</h3>
-      <ul>
-        <li>
-          Currently assisting in running the lab's ongoing Cooperative Action
-          Task study, where we are researching the acquisition of skills and
-          teamwork by using advanced eye trackers and telemetry to watch
-          participants play team based video games.
-        </li>
-      </ul>
-      <h3>
-        Martial Arts Instructor | Dynamic Martial Arts | June 2021 - Aug 2021
-      </h3>
-      <ul>
-        <li>
-          Directed medium size classes of kids ages 4-17 teaching Kenpo Karate
-          and playing team building games.
-        </li>
-      </ul>
-      <h3>Programming Tutor | Code Ninja | June 2019 - March 2020</h3>
-      <ul>
-        <li>
-          Taught kids ages 5-13 how to program in JavaScript through making
-          video games.
-        </li>
-      </ul>
-    </div>
-    <div class="spacer"></div>
-    <h2>SKILLS</h2>
-    <div class="mainEntry">
-      <p>
-        Python, C++, Go, Java, machine learning, GNU/Linux, troubleshooting,
-        object oriented programming, test-centric development, qualitative
-        observation, data recording, Microsoft Office, leadership, teamwork,
-        communication
-      </p>
-    </div>
-    <div class="spacer"></div>
-    <h2>AWARDS</h2>
-    <div class="mainEntry">
-      <h3>Eagle Scout | Scouts BSA | April 2020</h3>
-      <ul>
-        <li>
-          Led a team to design and construct storage units for use in organizing
-          inventory for local soup kitchen / social center, worked with groups
-          to solve problems and effectively execute solutions, and organized and
-          directed events and medium sized groups.
-        </li>
-      </ul>
-      <h3>Black Belt in Goju-Ryu Karate | December 2019</h3>
-      <ul>
-        <li>
-          Exercised discipline through training, and leadership through teaching
-          and example for other students.
-        </li>
-      </ul>
-      <h3>
-        Rochester Institute of Technology Innovation and Creativity Award | May
-        2019
-      </h3>
+      <div class="spacer"></div>
+      <h2>EXPERIENCE</h2>
+      <div class="mainEntry">
+        <h3>Software Developer | SecureCo | July 2023 - Present</h3>
+        <ul>
+          <li>
+            Currently programming and troubleshooting a secure data transfer
+            solution. I am responsible for implementing code obfuscation and
+            reverse engineering protection for the cross platform VPN app.
+          </li>
+        </ul>
+        <h3>Lab Assistant | CogWorks Lab RPI | January 2023 - Present</h3>
+        <ul>
+          <li>
+            Currently assisting in running the lab's ongoing Cooperative Action
+            Task study, where we are researching the acquisition of skills and
+            teamwork by using advanced eye trackers and telemetry to watch
+            participants play team based video games.
+          </li>
+        </ul>
+        <h3>
+          Martial Arts Instructor | Dynamic Martial Arts | June 2021 - Aug 2021
+        </h3>
+        <ul>
+          <li>
+            Directed medium size classes of kids ages 4-17 teaching Kenpo Karate
+            and playing team building games.
+          </li>
+        </ul>
+        <h3>Programming Tutor | Code Ninja | June 2019 - March 2020</h3>
+        <ul>
+          <li>
+            Taught kids ages 5-13 how to program in JavaScript through making
+            video games.
+          </li>
+        </ul>
+      </div>
+      <div class="spacer"></div>
+      <h2>SKILLS</h2>
+      <div class="mainEntry">
+        <p>
+          Python, C++, Go, Java, machine learning, GNU/Linux, troubleshooting,
+          object oriented programming, test-centric development, qualitative
+          observation, data recording, Microsoft Office, leadership, teamwork,
+          communication
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <h2>AWARDS</h2>
+      <div class="mainEntry">
+        <h3>Eagle Scout | Scouts BSA | April 2020</h3>
+        <ul>
+          <li>
+            Led a team to design and construct storage units for use in
+            organizing inventory for local soup kitchen / social center, worked
+            with groups to solve problems and effectively execute solutions, and
+            organized and directed events and medium sized groups.
+          </li>
+        </ul>
+        <h3>Black Belt in Goju-Ryu Karate | December 2019</h3>
+        <ul>
+          <li>
+            Exercised discipline through training, and leadership through
+            teaching and example for other students.
+          </li>
+        </ul>
+        <h3>
+          Rochester Institute of Technology Innovation and Creativity Award |
+          May 2019
+        </h3>
+      </div>
     </div>
   </body>
 </html>
